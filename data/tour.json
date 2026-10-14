@@ -1,11 +1,59 @@
 {
   "schemaVersion": 1,
-  "startSceneId": "corridor",
+  "startSceneId": "classroom",
+  "maps": [
+    {
+      "id": "school-building",
+      "name": "校舎",
+      "image": "assets/maps/school-building.png"
+    },
+    {
+      "id": "around-the-school",
+      "name": "学校周辺",
+      "image": "assets/maps/around-the-school.png"
+    }
+  ],
   "scenes": [
+    {
+      "id": "classroom",
+      "name": "教室",
+      "description": "日々の授業が行われる教室です。机や黒板など、普段の学習環境をご覧いただけます。",
+      "panorama": "assets/panoramas/classroom.jpg",
+      "preview": "assets/previews/classroom.jpg",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 95
+      },
+      "links": [
+        {
+          "to": "gym",
+          "label": "体育館へ",
+          "yaw": 50.9,
+          "pitch": -9.6,
+          "targetYaw": 0,
+          "targetPitch": 0
+        },
+        {
+          "to": "corridor",
+          "label": "中庭へ",
+          "yaw": -53.4,
+          "pitch": -5.7,
+          "targetYaw": 0,
+          "targetPitch": 0
+        }
+      ],
+      "media": [],
+      "mapId": "school-building",
+      "mapPosition": {
+        "x": 0.403,
+        "y": 0.51
+      }
+    },
     {
       "id": "corridor",
       "name": "中庭",
-      "description": "1階の廊下を想定した試作地点です。玄関に戻るか、理科室へ移動できます。",
+      "description": "校舎に囲まれた中庭です。緑のある落ち着いた空間で、校内の雰囲気を感じられます。",
       "panorama": "assets/panoramas/courtyard.jpg",
       "preview": "assets/previews/courtyard.jpg",
       "mapId": "school-building",
@@ -31,71 +79,30 @@
       "media": []
     },
     {
-      "id": "classroom",
-      "name": "教室",
-      "description": "",
-      "panorama": "assets/panoramas/classroom.jpg",
-      "preview": "assets/previews/classroom.jpg",
-      "mapId": "school-building",
-      "mapPosition": {
-        "x": 0.403,
-        "y": 0.51
-      },
-      "initialView": {
-        "yaw": 0,
-        "pitch": 0,
-        "hfov": 95
-      },
-      "links": [
-        {
-          "to": "gym",
-          "label": "体育館へ",
-          "yaw": 50.9,
-          "pitch": -9.6,
-          "targetYaw": 0,
-          "targetPitch": 0
-        },
-        {
-          "to": "corridor",
-          "label": "中庭へ",
-          "yaw": -53.4,
-          "pitch": -5.7,
-          "targetYaw": 0,
-          "targetPitch": 0
-        }
-      ],
-      "media": []
-    },
-    {
       "id": "ground",
       "name": "グラウンド",
-      "description": "",
+      "description": "体育の授業や部活動などで使用するグラウンドです。広々とした屋外施設の様子をご覧いただけます。",
       "panorama": "assets/panoramas/ground.jpg",
       "preview": "assets/previews/ground.jpg",
-      "mapId": "school-building",
-      "mapPosition": {
-        "x": 0.606,
-        "y": 0.31
-      },
       "initialView": {
         "yaw": 0,
         "pitch": 0,
         "hfov": 95
       },
       "links": [],
-      "media": []
+      "media": [],
+      "mapId": "school-building",
+      "mapPosition": {
+        "x": 0.606,
+        "y": 0.31
+      }
     },
     {
       "id": "gym",
       "name": "体育館",
-      "description": "",
+      "description": "体育の授業や部活動などで使用する体育館です。広いフロアや館内の様子をご覧いただけます。",
       "panorama": "assets/panoramas/gym.jpg",
       "preview": "assets/previews/gym.jpg",
-      "mapId": "school-building",
-      "mapPosition": {
-        "x": 0.221,
-        "y": 0.314
-      },
       "initialView": {
         "yaw": 0,
         "pitch": 0,
@@ -111,57 +118,50 @@
           "targetPitch": 0
         }
       ],
-      "media": []
+      "media": [],
+      "mapId": "school-building",
+      "mapPosition": {
+        "x": 0.221,
+        "y": 0.314
+      }
     },
     {
       "id": "learning-center",
       "name": "学習センター",
-      "description": "",
+      "description": "多くの座席とスクリーンを備えた学習センターです。さまざまな学習活動に対応できる空間です。",
       "panorama": "assets/panoramas/learning-center.jpg",
       "preview": "assets/previews/learning-center.jpg",
+      "initialView": {
+        "yaw": 0,
+        "pitch": 0,
+        "hfov": 95
+      },
+      "links": [],
+      "media": [],
       "mapId": "school-building",
       "mapPosition": {
         "x": 0.751,
         "y": 0.612
-      },
-      "initialView": {
-        "yaw": 0,
-        "pitch": 0,
-        "hfov": 95
-      },
-      "links": [],
-      "media": []
+      }
     },
     {
       "id": "library",
       "name": "図書館",
-      "description": "",
+      "description": "多くの本が並ぶ図書館です。読書や調べ学習に利用できる館内の様子をご覧いただけます。",
       "panorama": "assets/panoramas/library.jpg",
       "preview": "assets/previews/library.jpg",
-      "mapId": "school-building",
-      "mapPosition": {
-        "x": 0.733,
-        "y": 0.509
-      },
       "initialView": {
         "yaw": 0,
         "pitch": 0,
         "hfov": 95
       },
       "links": [],
-      "media": []
-    }
-  ],
-  "maps": [
-    {
-      "id": "school-building",
-      "name": "校舎",
-      "image": "assets/maps/school-building.png"
-    },
-    {
-      "id": "around-the-school",
-      "name": "学校周辺",
-      "image": "assets/maps/around-the-school.png"
+      "media": [],
+      "mapId": "school-building",
+      "mapPosition": {
+        "x": 0.733,
+        "y": 0.509
+      }
     }
   ]
 }
